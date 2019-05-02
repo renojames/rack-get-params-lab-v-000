@@ -31,6 +31,9 @@ class Application
 
       search_term = req.params["q"]
 
+      if @@items.include?(search_term) == false
+        resp.write "We don't have that item"
+
     end
 
     resp.finish
