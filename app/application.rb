@@ -31,10 +31,10 @@ class Application
 
       search_term = req.params["q"]
 
-      if @@items.include?(search_term) == false
+      if @@items.include?(search_term)
         resp.write "We don't have that item"
       else
-        resp.write "Added figs"
+        resp.write "Added #{search_term}"
       end
 
     end
