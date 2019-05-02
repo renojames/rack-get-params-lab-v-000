@@ -33,6 +33,8 @@ class Application
 
       if @@items.include?(search_term) == false
         resp.write "We don't have that item"
+      else
+        @@cart << search_term
 
     end
 
