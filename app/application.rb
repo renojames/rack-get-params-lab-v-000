@@ -27,6 +27,12 @@ class Application
       resp.write "Your cart is empty"
     end
 
+    if req.path.match(/add/)
+
+      search_term = req.params["q"]
+      
+    end
+
     resp.finish
   end
 
