@@ -30,7 +30,7 @@ class Application
     if req.path.match(/add/)
 
       search_term = req.params["q"]
-      
+
     end
 
     resp.finish
